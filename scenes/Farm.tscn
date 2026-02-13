@@ -3,17 +3,41 @@
 [ext_resource type="PackedScene" uid="uid://c6swhoqb3adba" path="res://scenes/Player.tscn" id="1_rcidk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rcidk"]
-size = Vector2(35, 658)
+size = Vector2(44.5, 702)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_duawh"]
+size = Vector2(49, 654)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x5ix6"]
+size = Vector2(1172, 48)
 
 [node name="FarmScene" type="Node2D" unique_id=443780689]
 
 [node name="Player" parent="." unique_id=930036235 instance=ExtResource("1_rcidk")]
-position = Vector2(241, 185)
+position = Vector2(240, 185)
 
 [node name="Borders" type="Node2D" parent="." unique_id=1105149576]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Borders" unique_id=2014931358]
+[node name="StaticBodyRight" type="StaticBody2D" parent="Borders" unique_id=2014931358]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=1607021295]
-position = Vector2(1134, 322)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBodyRight" unique_id=1607021295]
+position = Vector2(1157, 322)
 shape = SubResource("RectangleShape2D_rcidk")
+
+[node name="StaticBodyLeft" type="StaticBody2D" parent="Borders" unique_id=758222016]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBodyLeft" unique_id=469955745]
+position = Vector2(3.5, 317)
+shape = SubResource("RectangleShape2D_duawh")
+
+[node name="StaticBodyTop" type="StaticBody2D" parent="Borders" unique_id=1016014802]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBodyTop" unique_id=1162013746]
+position = Vector2(564, -3)
+shape = SubResource("RectangleShape2D_x5ix6")
+
+[node name="StaticBodyBottom" type="StaticBody2D" parent="Borders" unique_id=1710696976]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBodyBottom" unique_id=1986416806]
+position = Vector2(566.5, 655)
+shape = SubResource("RectangleShape2D_x5ix6")
