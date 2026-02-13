@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d203vvd0tgyn1"]
 
 [ext_resource type="PackedScene" uid="uid://c6swhoqb3adba" path="res://scenes/Player.tscn" id="1_rcidk"]
+[ext_resource type="PackedScene" uid="uid://cl6kll5sp4526" path="res://scenes/Tree.tscn" id="2_duawh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rcidk"]
 size = Vector2(44.5, 702)
@@ -15,6 +16,8 @@ size = Vector2(1172, 48)
 
 [node name="Player" parent="." unique_id=930036235 instance=ExtResource("1_rcidk")]
 position = Vector2(240, 185)
+
+[node name="Tree" parent="." unique_id=314178249 instance=ExtResource("2_duawh")]
 
 [node name="Borders" type="Node2D" parent="." unique_id=1105149576]
 
