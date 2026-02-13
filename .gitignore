@@ -1,0 +1,76 @@
+# Godot 4+ and 3.x .gitignore
+
+# 🔧 Godot import/cache files
+
+.import/
+.godot/
+export.cfg
+export_presets.cfg
+
+# Mono / C# (if you ever enable it)
+
+.mono/
+data_*/
+mono_crash.*
+
+# Build/export output
+
+bin/
+build/
+export/
+
+# Temporary files
+
+*.tmp
+*.temp
+*.log
+
+# Editor settings (optional — ignore if you want personal settings excluded)
+
+.editor/
+.idea/
+.vscode/
+
+# OS-generated files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+
+*~
+*.bak
+
+# Godot-specific crash logs
+
+crash.log
+
+# Compiled shaders cache
+
+.shader_cache/
+
+# Android build files (if exporting to Android)
+
+android/
+.gradle/
+
+# iOS export (if used)
+
+ios/
+
+# Web export (optional)
+
+html5/
+
+# Ignore imported resources (Godot will regenerate them)
+
+*.import
+
+# Large binary exports
+
+*.apk
+*.aab
+*.exe
+*.zip
+*.tar.gz
