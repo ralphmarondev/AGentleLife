@@ -8,5 +8,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	position = Vector2(200, 200)
-	print("Hello world")
+	position += Vector2(1, 0) * 5
