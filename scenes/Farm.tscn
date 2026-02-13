@@ -2,6 +2,18 @@
 
 [ext_resource type="PackedScene" uid="uid://c6swhoqb3adba" path="res://scenes/Player.tscn" id="1_rcidk"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rcidk"]
+size = Vector2(35, 658)
+
 [node name="FarmScene" type="Node2D" unique_id=443780689]
 
 [node name="Player" parent="." unique_id=930036235 instance=ExtResource("1_rcidk")]
+position = Vector2(241, 185)
+
+[node name="Borders" type="Node2D" parent="." unique_id=1105149576]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Borders" unique_id=2014931358]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=1607021295]
+position = Vector2(1134, 322)
+shape = SubResource("RectangleShape2D_rcidk")

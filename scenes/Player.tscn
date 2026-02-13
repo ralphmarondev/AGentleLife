@@ -1,11 +1,16 @@
 [gd_scene format=3 uid="uid://c6swhoqb3adba"]
 
-[ext_resource type="Texture2D" uid="uid://cek3iqmkwf2fw" path="res://icon.svg" id="1_p0vlq"]
 [ext_resource type="Script" uid="uid://i6rtu10jtg2d" path="res://scripts/Player.gd" id="1_v6fml"]
 
-[node name="Player" type="Node2D" unique_id=930036235]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p0vlq"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[node name="Player" type="CharacterBody2D" unique_id=1312075125]
 script = ExtResource("1_v6fml")
 
 [node name="PlayerImage" type="Sprite2D" parent="." unique_id=2043657502]
-position = Vector2(88, 94)
-texture = ExtResource("1_p0vlq")
+position = Vector2(3, 0)
+texture = SubResource("CompressedTexture2D_p0vlq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=725727940]
+polygon = PackedVector2Array(16, 16, 62, 57, 61, -58, -55, -59, -56, 52, 59, 56)
