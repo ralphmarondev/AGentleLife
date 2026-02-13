@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="AGentleLife"
+run/main_scene="uid://d203vvd0tgyn1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

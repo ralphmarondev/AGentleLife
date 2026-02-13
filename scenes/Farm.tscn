@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d203vvd0tgyn1"]
+
+[ext_resource type="PackedScene" uid="uid://c6swhoqb3adba" path="res://scenes/Player.tscn" id="1_rcidk"]
+
+[node name="FarmScene" type="Node2D" unique_id=443780689]
+
+[node name="Player" parent="." unique_id=930036235 instance=ExtResource("1_rcidk")]
