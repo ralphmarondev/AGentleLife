@@ -18,6 +18,7 @@ size = Vector2(1172, 48)
 position = Vector2(240, 185)
 
 [node name="Tree" parent="." unique_id=314178249 instance=ExtResource("2_duawh")]
+position = Vector2(513, 169)
 
 [node name="Borders" type="Node2D" parent="." unique_id=1105149576]
 
@@ -44,3 +45,7 @@ shape = SubResource("RectangleShape2D_x5ix6")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBodyBottom" unique_id=1986416806]
 position = Vector2(566.5, 655)
 shape = SubResource("RectangleShape2D_x5ix6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1874359660]
+position = Vector2(3.5, 317)
+shape = SubResource("RectangleShape2D_duawh")
